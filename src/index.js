@@ -1,7 +1,7 @@
 import { GraphQLScalarType } from 'graphql';
 import { Kind } from 'graphql/language';
 
-const GraphQLUUID = new GraphQLScalarType({
+const GraphQLLowercaseString = new GraphQLScalarType({
   name: 'LowercaseString',
   description:
     'The `LowercaseString` scalar type returns all strings in lower case',
@@ -20,4 +20,4 @@ const GraphQLUUID = new GraphQLScalarType({
   },
 });
 
-export default GraphQLUUID;
+export default GraphQLLowercaseString;

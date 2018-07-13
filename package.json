@@ -2,9 +2,6 @@
   "name": "graphql-type-lowercase-string",
   "version": "0.1.0",
   "description": "Lowercase string scalar type for GraphQL.js",
-  "author": "Cameroo Jenkinson <camjenkinson@gmail.com@gmail.com>",
-  "license": "MIT",
-  "repository": "https://github.com/cjjenkinsomn/graphql-type-lowercase-string.git",
   "keywords": [
     "graphql",
     "lowercase string",
@@ -12,17 +9,20 @@
     "scalar",
     "string"
   ],
-  "main": "lib/index.js",
+  "author": "Cameroo Jenkinson <camjenkinson@gmail.com@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/cjjenkinsomn/graphql-type-lowercase-string.git",
+  "main": "dist/index.js",
   "files": [
-    "lib"
+    "dist"
   ],
   "scripts": {
-    "build": "yarn clean:build && babel src --out-dir lib",
+    "build": "yarn remove:build && babel src --out-dir dist",
     "test": "jest",
     "test:coverage": "yarn test --coverage",
     "test:watch": "yarn test --watch",
-    "clean": "yarn clean:build & yarn clean:coverage & yarn clean:modules",
-    "remove:build": "rimraf lib",
+    "clean": "yarn remove:build & yarn remove:coverage & yarn remove:modules",
+    "remove:build": "rimraf dist",
     "remove:coverage": "rimraf coverage",
     "remove:modules": "rimraf node_modules",
     "lint": "eslint --cache src",
