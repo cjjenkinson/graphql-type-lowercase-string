@@ -9,7 +9,7 @@
     "scalar",
     "string"
   ],
-  "author": "Cameroo Jenkinson <camjenkinson@gmail.com@gmail.com>",
+  "author": "Cameron Jenkinson <camjenkinson@gmail.com",
   "license": "MIT",
   "repository": "https://github.com/cjjenkinsomn/graphql-type-lowercase-string.git",
   "main": "dist/index.js",
